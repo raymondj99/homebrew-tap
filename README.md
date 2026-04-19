@@ -5,8 +5,7 @@ Homebrew formulae for [sift](https://github.com/raymondj99/sift) — a local sem
 ## Install
 
 ```bash
-brew tap raymondj99/tap
-brew install sift
+brew install raymondj99/tap/sift-search
 ```
 
 ## Usage

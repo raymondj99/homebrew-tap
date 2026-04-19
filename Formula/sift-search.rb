@@ -1,4 +1,4 @@
-class Sift < Formula
+class SiftSearch < Formula
   version "0.1.6"
   desc "Local semantic search engine — index 30+ formats, hybrid search, AI agent memory"
   homepage "https://github.com/raymondj99/sift"
@@ -16,6 +16,8 @@ class Sift < Formula
     url "https://github.com/raymondj99/sift/releases/download/v#{version}/sift-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
     sha256 "4559eb86d02d9b927d8ec2354c0b78bed14b3fbcd29b506a9403ec5fbfc2a4db"
   end
+
+  conflicts_with "sift", because: "both install a `sift` binary"
 
   def install
     bin.install "sift"
